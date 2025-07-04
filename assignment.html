@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App Landing Page</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header & Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Download</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Jumbotron -->
+  <main>
+    <section class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Welcome to MyApp</h1>
+        <p class="lead">Your all-in-one solution to stay productive and connected. Fast. Simple. Efficient.</p>
+        <a href="#" class="btn btn-light btn-lg mt-3">Download Now</a>
+      </div>
+    </section>
+
+    <!-- Three-Card Grid -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="data:image/png;base64,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" class="card-img-top" alt="Feature 1">
+              <div class="card-body">
+                <h5 class="card-title">Fast Performance</h5>
+                <p class="card-text">Experience lightning-fast performance with our optimized engine.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="data:image/png;base64,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" class="card-img-top" alt="Feature 2">
+              <div class="card-body">
+                <h5 class="card-title">Intuitive Design</h5>
+                <p class="card-text">Enjoy a user-friendly and intuitive interface built for everyone.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="data:image/png;base64,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" class="card-img-top" alt="Feature 3">
+              <div class="card-body">
+                <h5 class="card-title">Secure & Reliable</h5>
+                <p class="card-text">Your data is safe with our top-notch security and reliability standards.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <!-- About -->
+        <div class="col-md-4">
+          <h5>About MyApp</h5>
+          <p>MyApp is your go-to mobile app for task management, scheduling, and collaboration.</p>
+        </div>
+        <!-- Useful Links -->
+        <div class="col-md-4">
+          <h5>Useful Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Support</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>Email: support@myapp.com</p>
+          <p>Phone: +1 234 567 890</p>
+        </div>
+      </div>
+      <hr class="bg-white">
+      <p class="text-center mb-0 pb-3">&copy; 2025 MyApp. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
